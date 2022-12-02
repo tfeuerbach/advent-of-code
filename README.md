@@ -56,9 +56,8 @@ which you can find in the file [`LICENSE`](/LICENSE).
 
 
 [2022-wal]: 2022/README.md
-[2022-sol]: 2022/solutions
 
-[aoc-about]:   https://adventofcode.com/2019/about
+[aoc-about]:   https://adventofcode.com/2022/about
 [aoc-eric]:    https://twitter.com/ericwastl
-[aoc-support]: https://adventofcode.com/2019/support
+[aoc-support]: https://adventofcode.com/2022/support
 [aoc-reddit]:  https://www.reddit.com/r/adventofcode/
