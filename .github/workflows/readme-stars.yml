@@ -13,7 +13,7 @@ jobs:
         with:
           userId: 1234567
           sessionCookie: ${{ secrets.AOC_SESSION }}
-          readmeLocation: 2022/README.md
+          readmeLocation: tfeuerbach/advent_of_code/2022/README.md
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update README stars
