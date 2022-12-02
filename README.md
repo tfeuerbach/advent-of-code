@@ -7,7 +7,7 @@ Repository for my [Advent of Code](#about-advent-of-code) solutions.
 
 ### Quick links
 
-- **Advent of Code 2022:** [Read Me][2022-wal], [Solutions][2022-sol]
+- **Advent of Code 2022:** [Read Me][2022-wal]
 
 About Advent of Code
 --------------------
@@ -32,12 +32,12 @@ In each year's folder you will find:
 
 - `README.md`: an overview of that year's problems with links to my solutions 
    to them.
-- `solutions/day-xx`: my solutions for the puzzles organized by day.
+- `day-xx`: my solutions for the puzzles organized by day.
   - `README.md`: the problem and solution w/ outputs along w/ instructions for
      runnning the program.
   - `solution.py`: Part 1 and 2 of each problem as a single file.
-- `solutions/day-xx/input`: a directory to store any problem inputs.
-- `solutions/day-xx/misc`: any extra files created in the solution or as extra. This
+- `day-xx/input`: a directory to store any problem inputs.
+- `day-xx/misc`: any extra files created in the solution or as extra. This
    could be visualizations, images, tests, etc.
 - `lib/`: small library of utilities written for that specific year. As there are
    reoccuring problems and concepts, this folder will hold common code used by 
