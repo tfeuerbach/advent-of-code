@@ -1,6 +1,8 @@
 🎄 Advent of Code 🎄
 ==============
 
+![AoC2022 logo](https://raw.githubusercontent.com/tfeuerbach/advent-of-code/main/aoc.png)
+
 Repository for my [Advent of Code](#about-advent-of-code) solutions.
 
 ### Quick links
