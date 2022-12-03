@@ -18,6 +18,6 @@ def countCalories(filename):
     print("The top three elves hold: " + str(calories[:3]) + " calories which adds up to: " + str(sum(calories[:3])) + " kcal!")
 
 if len(sys.argv) == 2:
-    lines = countCalories(sys.argv[1])
+    countCalories(sys.argv[1])
 else:
     print("day01.py inputfile")
