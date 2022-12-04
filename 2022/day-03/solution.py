@@ -1,5 +1,7 @@
 import sys
 from itertools import cycle
+sys.path.append('..')
+from lib.read_and_split import read_and_split
 
 # Part 1 -- Calculate the total priority of the matched items between the compartments for each rucksack
 
@@ -17,7 +19,7 @@ def sorter(array):
     return total
 
 def rucksack_sort(filename):
-    manifest = open(filename).read().splitlines()
+    manifest = read_and_split(filename)
     total_priority = sorter(manifest)
     print('Part One:')
     print('The total priority of the matched items is: '+str(total_priority)+'\n')
@@ -30,7 +32,7 @@ def chunks(t, n):
          yield t[smidge:smidge+n]
 
 def group_sort(filename):
-    manifest = list(open(filename).read().splitlines())
+    manifest = list(read_and_split(filename))
     group_total = 0
     group_list = chunks(manifest, 3)
     for group in group_list:

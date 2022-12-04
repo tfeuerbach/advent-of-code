@@ -1,5 +1,6 @@
 import sys
-
+sys.path.append('..')
+from lib.read_and_split import read_and_split
 """The score for a single round is the score for the shape you selected (1 for Rock, 2 for Paper, and 3 for Scissors) plus the score for the outcome of the round (0 if you lost, 3 if the round was a draw, and 6 if you won).
 
 A/X = Rock, B/Y = Paper, C/Z = Scissors"""
@@ -14,7 +15,7 @@ hands = { 'A X': 4, 'A Y': 8, 'A Z': 3,
 
 def rock_paper_scissors(filename):
     score = 0
-    strat = open(filename).read().splitlines()
+    strat = read_and_split(filename)
     for hand in strat:
         score_tally = int(hands[hand])
         score = score + score_tally
