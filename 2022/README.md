@@ -1,7 +1,7 @@
 ![AoC2022 logo](https://raw.githubusercontent.com/tfeuerbach/advent-of-code/main/2022/aoc_2022.png)
 
 <!--- advent_readme_stars table --->
-## 🎄 2022 Progress 🎄
+## 2022 Results
 
 | Day | Part 1 | Part 2 |
 | :---: | :---: | :---: |
