@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ![AoC2022 logo](https://raw.githubusercontent.com/tfeuerbach/advent-of-code/main/2022/aoc_2022.png)
 
 <!--- advent_readme_stars table --->
@@ -12,4 +10,4 @@
 | [Day 3](https://github.com/tfeuerbach/advent_of_code/tree/main/2022/day-03) | ⭐ | ⭐ |
 | [Day 4](https://github.com/tfeuerbach/advent_of_code/tree/main/2022/day-04) | ⭐ | ⭐ |
 <!--- advent_readme_stars table --->
->>>>>>> 22acc6b3d33327f5b063ef64ce062ec0fb2586e8
+
