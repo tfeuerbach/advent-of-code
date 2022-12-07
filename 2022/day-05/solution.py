@@ -3,6 +3,7 @@ import numpy as np
 sys.path.append('..')
 from lib.read_and_split import *
 
+# The stacks of crates on the ship
 table = {'1': ['D', 'T', 'R', 'B', 'J', 'L', 'W', 'G'],
          '2': ['S', 'W', 'C'],
          '3': ['R', 'Z', 'T', 'M'],
@@ -13,40 +14,37 @@ table = {'1': ['D', 'T', 'R', 'B', 'J', 'L', 'W', 'G'],
          '8': ['L', 'H', 'R', 'B', 'T', 'V', 'M'],
          '9': ['Q', 'P', 'D', 'S', 'V']}
 
-# test_table = {'1': ['Z', 'N'], '2': ['M', 'C', 'D'], '3': ['P']}
-
+# Part 1 -- Output the top row of crates after using the given instructions at input/input.txt
 
 def crane_do(instruction):
     quantity = instruction[0]
     source = instruction[1]
     destination = instruction[2]
-    print('move '+str(quantity)+' from '+str(source)+' to '+str(destination))
     for i in range(int(quantity)):
         table[str(destination)].append(table[str(source)].pop())
 
-    """
-    moved_crates = np.flip(table[str(source)][-quantity:])
-    print('MOVED CRATES'+str(moved_crates))
-    print('BEFORE'+str(table))
-    for crate in moved_crates:
-        table[str(source)].remove(crate)
-        table[str(destination)].append(crate)
-    print('AFTER'+str(table)+'\n')
-    return table
-    """
+def bulk_crane_do(instruction):
+    quantity = instruction[0]
+    source = instruction[1]
+    destination = instruction[2]
+    print('move ',quantity,' from ',table[str(source)],' to ',destination)
+    print('captured crates: ',table[str(source)][-quantity:])
+    for value in table[str(source)][-quantity:]:
+        table[str(source)].remove(value)
+        table[str(destination)].append(value)
+        print(table,'\n\n')
 
 def cargo_sort(filename):
-    instructions = read_and_split(filename) # instructions = file.read().splitlines()
+    instructions = read_and_split(filename) 
     top_crates = []
     for step in instructions:
         parsed_step = [int(i) for i in step.split() if i.isdigit()]
-        crane_do(parsed_step)
-    print(table)
-    #for stack, crates in table.items():
-    #    top_crate = list(crates[-1])
-    #    top_crates.extend(top_crate)
-    #print(top_crates)
-    
+        bulk_crane_do(parsed_step)
+   
+    for stack, crates in table.items():
+        top_crate = list(crates[-1])
+        top_crates.extend(top_crate)
+    print(top_crates)
 
 if len(sys.argv) == 2:
     cargo_sort(sys.argv[1])
