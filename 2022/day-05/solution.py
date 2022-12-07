@@ -28,18 +28,16 @@ def bulk_crane_do(instruction):
     quantity = instruction[0]
     source = instruction[1]
     destination = instruction[2]
-    print('move ',quantity,' from ',table[str(source)],' to ',destination)
-    print('captured crates: ',table[str(source)][-quantity:])
     for value in table[str(source)][-quantity:]:
         table[str(source)].pop()
         table[str(destination)].append(value)
-        print(table,'\n\n')
 
 def cargo_sort(filename):
     instructions = read_and_split(filename) 
     top_crates = []
     for step in instructions:
         parsed_step = [int(i) for i in step.split() if i.isdigit()]
+#        crane_do(parsed_step)
         bulk_crane_do(parsed_step)
    
     for stack, crates in table.items():
