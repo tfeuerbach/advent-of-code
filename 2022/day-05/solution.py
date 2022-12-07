@@ -23,6 +23,8 @@ def crane_do(instruction):
     for i in range(int(quantity)):
         table[str(destination)].append(table[str(source)].pop())
 
+# Part 2 -- Output the top row of crates after using the same instructions but preserve crate order.
+
 def bulk_crane_do(instruction):
     quantity = instruction[0]
     source = instruction[1]
