@@ -21,6 +21,10 @@ def crane_do(instruction):
     source = instruction[1]
     destination = instruction[2]
     print('move '+str(quantity)+' from '+str(source)+' to '+str(destination))
+    for i in range(int(quantity)):
+        table[str(destination)].append(table[str(source)].pop())
+
+    """
     moved_crates = np.flip(table[str(source)][-quantity:])
     print('MOVED CRATES'+str(moved_crates))
     print('BEFORE'+str(table))
@@ -29,17 +33,19 @@ def crane_do(instruction):
         table[str(destination)].append(crate)
     print('AFTER'+str(table)+'\n')
     return table
-    
+    """
+
 def cargo_sort(filename):
     instructions = read_and_split(filename) # instructions = file.read().splitlines()
     top_crates = []
     for step in instructions:
         parsed_step = [int(i) for i in step.split() if i.isdigit()]
-        table = crane_do(parsed_step)
-    for stack, crates in table.items():
-        top_crate = list(crates[-1])
-        top_crates.extend(top_crate)
-    print(top_crates)
+        crane_do(parsed_step)
+    print(table)
+    #for stack, crates in table.items():
+    #    top_crate = list(crates[-1])
+    #    top_crates.extend(top_crate)
+    #print(top_crates)
     
 
 if len(sys.argv) == 2:
