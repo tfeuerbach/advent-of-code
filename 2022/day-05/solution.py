@@ -30,7 +30,7 @@ def bulk_crane_do(instruction):
     print('move ',quantity,' from ',table[str(source)],' to ',destination)
     print('captured crates: ',table[str(source)][-quantity:])
     for value in table[str(source)][-quantity:]:
-        table[str(source)].remove(value)
+        table[str(source)].pop()
         table[str(destination)].append(value)
         print(table,'\n\n')
 
