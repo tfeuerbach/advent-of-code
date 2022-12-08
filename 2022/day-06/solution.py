@@ -39,3 +39,11 @@ if len(sys.argv) == 2:
 else:
     print('solution.py inputfile')
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> d818fa9 (update day 7)
