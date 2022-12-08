@@ -38,4 +38,3 @@ if len(sys.argv) == 2:
     parse_message(sys.argv[1])
 else:
     print('solution.py inputfile')
-
