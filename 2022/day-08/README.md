@@ -51,7 +51,7 @@ To measure the viewing distance from a given tree, look up, down, left, and righ
 
 The Elves don't care about distant trees taller than those found by the rules above; the proposed tree house has large eaves to keep it dry, so they wouldn't be able to see higher than the tree house anyway.
 
-In the example above, consider the middle 5 in the second row:
+In the example above, consider the middle `5` in the second row:
 
 ```
 30373
@@ -61,17 +61,17 @@ In the example above, consider the middle 5 in the second row:
 35390
 ```
 
- - Looking up, its view is not blocked; it can see 1 tree (of height 3).
+ - Looking up, its view is not blocked; it can see `1` tree (of height `3`).
 
- - Looking left, its view is blocked immediately; it can see only 1 tree (of height 5, right next to it).
+ - Looking left, its view is blocked immediately; it can see only `1` tree (of height `5`, right next to it).
 
- - Looking right, its view is not blocked; it can see 2 trees.
+ - Looking right, its view is not blocked; it can see `2` trees.
 
- - Looking down, its view is blocked eventually; it can see 2 trees (one of height 3, then the tree of height 5 that blocks its view).
+ - Looking down, its view is blocked eventually; it can see `2` trees (one of height `3`, then the tree of height `5` that blocks its view).
 
-A tree's scenic score is found by multiplying together its viewing distance in each of the four directions. For this tree, this is 4 (found by multiplying 1 * 1 * 2 * 2).
+A tree's scenic score is found by multiplying together its viewing distance in each of the four directions. For this tree, this is `4` (found by multiplying 1 * 1 * 2 * 2).
 
-However, you can do even better: consider the tree of height 5 in the middle of the fourth row:
+However, you can do even better: consider the tree of height `5` in the middle of the fourth row:
 
 ```
 30373
@@ -81,13 +81,13 @@ However, you can do even better: consider the tree of height 5 in the middle of 
 35390
 ```
 
- - Looking up, its view is blocked at 2 trees (by another tree with a height of 5).
+ - Looking up, its view is blocked at `2` trees (by another tree with a height of `5`).
 
- - Looking left, its view is not blocked; it can see 2 trees.
+ - Looking left, its view is not blocked; it can see `2` trees.
 
- - Looking down, its view is also not blocked; it can see 1 tree.
+ - Looking down, its view is also not blocked; it can see `1` tree.
 
- - Looking right, its view is blocked at 2 trees (by a massive tree of height 9).
+ - Looking right, its view is blocked at `2` trees (by a massive tree of height `9`).
 
 This tree's scenic score is 8 (2 * 2 * 1 * 2); this is the ideal spot for the tree house.
 
