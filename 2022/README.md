@@ -5,7 +5,7 @@
   <div align="left">
     <p>In here you will find the problems for each day and my solutions to them.</p>
   </div>
-  <div align="right">
+  <div align="center">
 
 <!--- advent_readme_stars table --->
 ## 2022 Results
