@@ -19,6 +19,7 @@
 | [Day 5](https://github.com/tfeuerbach/advent_of_code/tree/main/2022/day-05) | ⭐ | ⭐ |
 | [Day 6](https://github.com/tfeuerbach/advent_of_code/tree/main/2022/day-06) | ⭐ | ⭐ |
 | [Day 7](https://github.com/tfeuerbach/advent_of_code/tree/main/2022/day-07) | ⭐ | ⭐ |
+| [Day 8](https://github.com/tfeuerbach/advent_of_code/tree/main/2022/day-08) | ⭐ | ⭐ |
 <!--- advent_readme_stars table --->
 
   </div>
