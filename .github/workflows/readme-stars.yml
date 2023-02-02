@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: tfeuerbach/aoc-markdown-table@v1.0.6
+      - uses: tfeuerbach/aoc-markdown-table@v1.0.7
         with:
           userId: 2435215
           sessionCookie: ${{ secrets.AOC_SESSION }}
