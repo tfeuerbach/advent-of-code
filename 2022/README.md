@@ -8,7 +8,7 @@
   <div align="center">
 
 <!--- advent_readme_stars table --->
-## 2022 Results
+## 2022 Progress
 
 | Day | Part 1 | Part 2 |
 | :---: | :---: | :---: |
